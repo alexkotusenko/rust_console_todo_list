@@ -1,5 +1,9 @@
 use std::process::Command;
 
+pub fn sep() {
+    println!("---------------");
+}
+
 pub fn clear_console() {
     if cfg!(target_os = "windows") { // only one = sign
         Command::new("cmd")

@@ -1,12 +1,12 @@
-use todo_handler::TodoList;
-use todo_handler::Todo;
-
 mod io_handler;
 mod misc;
 mod todo_handler;
 mod parser;
 mod commands;
 mod state;
+
+use todo_handler::TodoList;
+use todo_handler::Todo;
 
 fn main() {
     let mut todos: Vec<todo_handler::Todo> = Vec::new();
@@ -27,7 +27,7 @@ fn main() {
     // the_todo_list.print();
     // todolist experimental code above
     
-    io_handler::list_options(); 
+    io_handler::list_options();
     let mut input: String = String::new();
     loop {
         input = io_handler::get_user_input("Pick your command");

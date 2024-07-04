@@ -1,6 +1,6 @@
 #[derive(Debug, Default)]
 pub struct Todo {
-    id: i32,
+    pub id: i32,
     title: String,
     completed: bool
 }
@@ -18,6 +18,13 @@ impl Todo {
             id: -1,
             completed: false
         }
+    }
+    pub fn print(&self) {
+        match self.completed {
+            true => print!("[x] "),
+            false => print!("[ ] ")
+        }
+        println!("{} - #{}", self.title, self.id);
     }
 }
 
