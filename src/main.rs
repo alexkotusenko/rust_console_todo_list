@@ -17,14 +17,14 @@ fn main() {
     
     
     // todolist experimental code below
-    let mut the_todo_list = TodoList::new();
-    the_todo_list.add(Todo::new(None));
-    the_todo_list.add(Todo::new(None));
-    the_todo_list.add(Todo::new(None));
-    the_todo_list.add(Todo::new(None));
-    the_todo_list.add(Todo::new(None));
+    // let mut the_todo_list = TodoList::new();
+    // the_todo_list.add(Todo::new(None));
+    // the_todo_list.add(Todo::new(None));
+    // the_todo_list.add(Todo::new(None));
+    // the_todo_list.add(Todo::new(None));
+    // the_todo_list.add(Todo::new(None));
     
-    the_todo_list.print();
+    // the_todo_list.print();
     // todolist experimental code above
     
     io_handler::list_options(); 
