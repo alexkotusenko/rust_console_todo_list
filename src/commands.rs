@@ -13,3 +13,10 @@ pub fn add_todo() {
     state::initialize_empty_todo();
 }
 
+pub fn list_unchecked_todos() {
+    println!("Listing unchecked todos...");
+}
+
+pub fn list_checked_todos() {
+    println!("listing checked todos!");
+}
