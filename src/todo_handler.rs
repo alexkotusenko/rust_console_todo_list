@@ -1,8 +1,8 @@
 #[derive(Debug, Default)]
 pub struct Todo {
-    id: i32,
-    title: String,
-    completed: bool
+    pub id: i32,
+    pub title: String,
+    pub completed: bool
 }
 
 impl Todo {
@@ -19,16 +19,25 @@ impl Todo {
             completed: false
         }
     }
+    pub fn print(&self) {
+        match self.completed {
+            true => print!("[x] "),
+            false => print!("[ ] ")
+        }
+        println!("{} - #{}", self.title, self.id);
+    }
 }
 
 #[derive(Debug)]
 pub struct TodoList {
-    todos: Vec<Todo> 
+    pub name: String,
+    pub todos: Vec<Todo> 
 }
 
 impl TodoList {
     pub fn new() -> Self {
         Self {
+            name: String::from("Unnamed todolist"),
             todos: Vec::new()
         }
     }
